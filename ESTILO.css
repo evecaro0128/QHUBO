@@ -1,0 +1,30 @@
+.container-fluid {
+
+background-color: #85D3EF;
+
+}
+.loguito {
+    border-radius: 50px;
+    background-color: #FDEB3E;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: relative;
+    left: 55rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 60px;
+
+
+}
+
+
+.dropdown {
+    button {
+        background-color: black;
+        border: none;
+        color: white;
+    }
+}
