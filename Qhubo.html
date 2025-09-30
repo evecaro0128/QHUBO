@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link rel="stylesheet" href="ESTILO.css">
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -19,17 +21,178 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+<div frame="banner_principal" style="position: relative; width: 100%; padding-top: 31.48%;"> <img itercontenttypein="qh_banner_seccion" itercontenttypeout="qh_banner_seccion" src="banner.png" width="4500" height="490" style="bottom: 0; left: 0; top: 0; right: 0;
+max-height: 100%; max-width: 100%;
+display: block; position: absolute; margin: auto;" iterimgid="48850585" sizes="100vw" alt="Imagen WOM ASESORES MEDELLIN BANNER" title="Imagen WOM ASESORES MEDELLIN BANNER"> </div>
+  
+  <h1 class="wom"> ¿Sin empleo? Wom busca <br> asesores comerciales para <br> trabajo en Medellín</h1>
+  
+  <p class="texto-wom"> Si está buscando empleo como asesor comercial, aliste la hoja de vida para que se <br> postule en la convocatoria de WOM en Medellín. La compañía de telefonía móvil está <br> recibiendo hojas de vida. Qhubo le cuenta cómo participar. </p>
+
+ <div class="noticias-laterales">
+  <div class="tarjeta-noticia">
+    <img src="gato.jpg" alt="Imagen de noticia">
+    <div class="contenido-noticia">
+      <p><span class="punto-rojo">•</span> Escuela para Propietarios Felinos, el nuevo espacio de Envigado</p>
+    </div>
+  </div>
+
+  <div class="tarjeta-noticia">
+    <img src="gato2.jpg" alt="Imagen de noticia">
+    <div class="contenido-noticia">
+      <p><span class="punto-rojo">•</span> El gato que fundó las bases de la literatura moderna japonesa</p>
+    </div>
+  </div>
+
+  <div class="tarjeta-noticia">
+    <img src="homicidio.jpg" alt="Imagen de noticia">
+    <div class="contenido-noticia">
+      <p><span class="punto-rojo">•</span> ¿Qué pasó? Investigan homicidio de hombre en pelea doméstica en Robledo Pajarito</p>
+    </div>
+  </div>
+</div>
+
+<div class="slider">
+  <div class="slides">
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1018/800/400');"></div>
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1015/800/400');"></div>
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1019/800/400');"></div>
+  </div>
+
+  
+  <button class="nav prev">&#10094;</button>
+  <button class="nav next">&#10095;</button>
+</div>
+
+<script>
+  const slides = document.querySelector(".slides");
+  const slide = document.querySelectorAll(".slide");
+  const prev = document.querySelector(".prev");
+  const next = document.querySelector(".next");
+
+  let index = 0;
+
+  function showSlide(i) {
+    if (i >= slide.length) index = 0;
+    if (i < 0) index = slide.length - 1;
+    slides.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  next.addEventListener("click", () => {
+    index++;
+    showSlide(index);
+  });
+
+  prev.addEventListener("click", () => {
+    index--;
+    showSlide(index);
+  });
+  
+</script>
+
+<div class="slider">
+  <button class="nav prev">&#10094;</button>
+  
+  <button class="ver-mas">Ver más</button>
+  
+  <button class="nav next">&#10095;</button>
+</div>
+
+ <div class="carousel-container">
+    
+    <button class="carousel-btn prev">&#10094;</button>
+
+    
+    <div class="carousel">
+      <div class="card">
+        <img src="img1.jpg" alt="Noticia 1">
+        <h3>EN VIDEO: ¡Indignante! Motociclista atropelló a un niño y se voló</h3>
+        <div class="tags">
+          <span>Movilidad</span><span>Local</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img2.jpg" alt="Noticia 2">
+        <h3>¿Qué pasó? Investigan homicidio de hombre en Robledo Pajarito</h3>
+        <div class="tags">
+          <span>Judicial</span><span>Lo último</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img3.jpg" alt="Noticia 3">
+        <h3>Dos primos del alcalde de Yalí fueron asesinados dentro de una finca</h3>
+        <div class="tags">
+          <span>Judicial</span><span>Lo último</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+
+  
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+
+<footer class="main-footer">
+    <div class="top-section">
+        <div class="content-box">
+            <div class="image-gallery">
+    <img src="cultura1.jpg" alt="Personas en una plaza" class="image-placeholder">
+    
+    <img src="cultura2.jpg" alt="Frutas en un mercado" class="image-placeholder main">
+    
+    <img src="cultura3.jpeg" alt="Niños jugando" class="image-placeholder">
+</div>
+            <div class="about-us">
+                <h2>Somos Q'HUB0</h2>
+                <p>Q'HUBO líder en periodismo social y popular en Colombia. Aquí se <br> encuentra la caja de herramientas, las cosas que hacemos, nuestra <br> vida y todo lo que nos apasiona.</p>
+                <a href="#" class="btn-more">Conocer más</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-section">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Interactúa con nosotros</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook">f</a>
+                    <a href="#" class="social-icon instagram">X</a>
+                    <a href="#" class="social-icon twitter">@</a>
+                    <a href="#" class="social-icon youtube">▶</a>
+                    <a href="#" class="social-icon tiktok">🎵</a>
+                    <a href="#" class="social-icon whatsapp">w</a>
+                    <a href="#" class="social-icon telegram">✈</a>
+                </div>
+            </div>
+
+            <div class="footer-column legal-info">
+                <h3>Información legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad y uso de información personal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-info">
+                <h3>Contacto</h3>
+                <p class="contact-detail location">Carrera 48 N.º 30 sur - 119, Envigado - Antioquia, Colombia</p>
+                <p class="contact-detail email">envigado@quhobo.com</p>
+                <p class="contact-detail phone">(67) 89843 / 320 33 00</p>
+                <p class="contact-detail phone">(67) 301 678 8801</p>
+            </div>
+        </div>
+        <a href="#" class="scroll-top-btn">▲</a>
+    </div>
+</footer>

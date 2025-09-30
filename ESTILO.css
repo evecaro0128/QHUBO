@@ -1,0 +1,486 @@
+
+
+.wom {
+  background-color: yellow;
+  width: fit-content;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  line-height: 1.2;
+}
+
+.texto-wom {
+  position: absolute;
+  top: 44%;
+  left: 15%;
+  color: white;
+}
+
+.noticias-laterales {
+  position: absolute;
+  bottom: 570px;
+  left: 2000px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.tarjeta-noticia {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transform: skew(-3deg);
+  border-radius: 5px;
+  width: 320px;
+}
+
+.tarjeta-noticia img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.contenido-noticia {
+  transform: skew(3deg);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.punto-rojo {
+  color: red;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.nav {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.prev {
+  left: 500px;
+}
+
+.next {
+  right: 1800px;
+}
+
+.ver-mas {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  background-color: #85D3EF;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ver-mas:hover {
+  background-color: #0056b3;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-left: 100px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card {
+  flex: 0 0 360px;
+  margin: 0 15px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 480px;
+}
+
+.card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.tags {
+  padding: 10px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.carousel-button {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+  left: 20px;
+}
+
+.carousel-button.next {
+  left: 70px;
+}
+
+/* Estilos generales y variables */
+:root {
+    --yellow: #ffeb00; /* Color amarillo brillante */
+    --black: #222222; /* Color negro oscuro */
+    --white: #ffffff;
+    --gray-text: #cccccc;
+    --max-width: 1200px; /* Ancho máximo del contenido */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* --- FOOTER PRINCIPAL --- */
+.main-footer {
+    width: 100%;
+    color: var(--white);
+    font-size: 14px;
+}
+
+/* --- SECCIÓN SUPERIOR (AMARILLA) --- */
+.main-footer .top-section {
+    background-color: var(--yellow);
+    padding: 60px 20px;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer .top-section .content-box {
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main-footer .image-gallery {
+    display: flex;
+    position: relative;
+    padding-left: 20px; /* Espacio para el solapamiento */
+}
+
+/* Placeholder para las imágenes */
+.main-footer .image-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0; /* Color claro para simular la imagen */
+    border: 5px solid var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100;
+    left: 0;
+    transform: rotate(-5deg);
+}
+.main-footer .image-placeholder:nth-child(2) {
+    left: 100px;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+.main-footer .image-placeholder:nth-child(3) {
+    left: 200px;
+    transform: rotate(5deg);
+}
+
+.main-footer .about-us {
+    flex-grow: 1;
+    max-width: 500px;
+    margin-left: 300px; /* Ajuste para el espacio de las imágenes */
+}
+
+.main-footer .about-us h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.main-footer .about-us p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.main-footer .btn-more {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main-footer .btn-more:hover {
+    background-color: #444444;
+}
+
+/* --- SECCIÓN INFERIOR (NEGRA) --- */
+.main-footer .bottom-section {
+    background-color: var(--black);
+    padding: 40px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer .footer-columns {
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.main-footer .footer-column {
+    min-width: 200px;
+}
+
+.main-footer .footer-column h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+/* Estilos de información legal */
+.main-footer .legal-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer .legal-info a {
+    color: var(--gray-text);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.main-footer .legal-info a:hover {
+    color: var(--white);
+}
+
+/* Estilos de contacto */
+.main-footer .contact-info p {
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+    color: var(--gray-text);
+}
+
+/* Estilos de redes sociales */
+.main-footer .social-icons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    max-width: 200px; /* Ajuste el ancho para que quepan 4 columnas */
+}
+
+.main-footer .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: var(--white);
+    color: var(--black);
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-footer .social-icon:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+/* Botón de "Scroll to Top" */
+.main-footer .scroll-top-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.main-footer .scroll-top-btn:hover {
+    background-color: var(--yellow);
+}
+
+/* Media Queries para un diseño más responsivo */
+@media (max-width: 900px) {
+    .main-footer .top-section .content-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .main-footer .image-gallery {
+        margin-bottom: 40px;
+        /* Asegurarse de que el contenedor tenga espacio en pantallas más pequeñas */
+        height: 250px; 
+    }
+    
+    .main-footer .about-us {
+        margin-left: 0;
+    }
+    
+    .main-footer .footer-columns {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+/* --- SECCIÓN SUPERIOR (AMARILLA) --- */
+.main-footer .top-section {
+    background-color: var(--yellow);
+    padding: 60px 20px;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer .top-section .content-box {
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* Cambio: Aseguramos que haya espacio para el solapamiento de la galería */
+    justify-content: space-around; 
+    gap: 40px;
+}
+
+.main-footer .image-gallery {
+    /* El contenedor ahora es relativo para que los hijos absolutos se posicionen respecto a él */
+    position: relative;
+    /* Define el espacio que ocuparán las imágenes */
+    width: 350px; 
+    height: 180px; 
+    flex-shrink: 0; /* Evita que se encoja */
+}
+
+/* Estilos de los placeholders de imágenes */
+.main-footer .image-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: var(--white); /* Color blanco para simular el papel */
+    border: 5px solid var(--white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Posicionamiento absoluto dentro de .image-gallery */
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* Usamos transform: translate para mover y rotar, manteniendo left/top en 0 */
+}
+
+/* Imagen 1 (izquierda) */
+.main-footer .image-placeholder:nth-child(1) {
+    transform: translate(0px, 15px) rotate(-5deg); 
+    z-index: 1;
+}
+/* Imagen 2 (centro/principal) */
+.main-footer .image-placeholder:nth-child(2) {
+    transform: translate(100px, 0) rotate(0deg); /* Mover a la derecha */
+    z-index: 3; /* La más alta para que se vea encima */
+    width: 170px; /* Un poco más grande como en el original */
+    height: 170px;
+}
+/* Imagen 3 (derecha) */
+.main-footer .image-placeholder:nth-child(3) {
+    transform: translate(200px, 15px) rotate(5deg); /* Mover más a la derecha */
+    z-index: 2;
+}
+
+
+.main-footer .about-us {
+    /* Eliminamos el margin-left fijo */
+    margin-left: 0; 
+    max-width: 500px;
+    /* Agregamos padding-left para separarlo un poco de las imágenes si es necesario */
+    padding-left: 20px; 
+}
