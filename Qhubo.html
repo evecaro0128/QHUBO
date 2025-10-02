@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-info">
   <div class="container-fluid">
     <div class="loguito">
     <a class="navbar-brand" href="#">
@@ -36,18 +36,118 @@
   </div>
 </nav>
 
-<p class="d-inline-flex gap-1">
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-</p>
+<nav class="navbar bg-info">
+  <div class="container justify-content-center">
+    <ul class="nav">
+      <li class="nav-item mx-3">
+        <a class="nav-link d-flex flex-column align-items-center text-dark fw-bold"
+   data-bs-toggle="collapse" href="#collapseActualidad" role="button"
+   aria-expanded="false" aria-controls="collapseActualidad">
+  <i class="bi bi-clock-history fs-4"></i>
+  Actualidad
+</a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link d-flex flex-column align-items-center text-dark fw-bold" href="#">
+          <i class="bi bi-journal-text fs-4"></i>
+          Útil para vos
+        </a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link d-flex flex-column align-items-center text-dark fw-bold" href="#">
+          <i class="bi bi-tv fs-4"></i>
+          Entretenimiento
+        </a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link d-flex flex-column align-items-center text-dark fw-bold" href="#">
+          <i class="bi bi-dribbble fs-4"></i>
+          Deportes
+        </a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link d-flex flex-column align-items-center text-dark fw-bold" href="#">
+          <i class="bi bi-cash-coin fs-4"></i>
+          Economía
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-<div class="row">
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
-      <div class="card card-body">
-        Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  <div class="collapse bg-dark text-white p-4" id="collapseActualidad">
+  <h5 class="text-warning fw-bold mb-4">Actualidad</h5>
+  <div class="row g-3">
+    <div class="col-md-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <i class="bi bi-gavel fs-3 text-info"></i>
+          <h6 class="fw-bold text-primary">Judicial</h6>
+          <p class="small">Conoce de primera mano los hechos judiciales de la región.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <i class="bi bi-geo-alt fs-3 text-info"></i>
+          <h6 class="fw-bold text-primary">Local</h6>
+          <p class="small">Encuentra hechos relevantes de Medellín y el Valle de Aburrá.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <i class="bi bi-globe fs-3 text-info"></i>
+          <h6 class="fw-bold text-primary">Internacional</h6>
+          <p class="small">Noticias y actualidad del mundo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <i class="bi bi-truck fs-3 text-info"></i>
+          <h6 class="fw-bold text-primary">Movilidad</h6>
+          <p class="small">Información de movilidad en Medellín.</p>
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+
+
+
+<form class="formulario">
+
+<img src="fc136df4c80a03b6636e3231e3aa6a87.png" alt="formu" width="300px">
+<h1>Suscríbete a nuestro newsletter</h1>
+<h5>Para estar al día con las noticias más destacadas.</h5>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label letra">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label letra">Nombre</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label letra">Celular</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
 
 
 

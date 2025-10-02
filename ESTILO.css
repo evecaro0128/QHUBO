@@ -1,8 +1,3 @@
-.container-fluid {
-
-background-color: #85D3EF;
-
-}
 .loguito {
     border-radius: 50px;
     background-color: #FDEB3E;
@@ -10,14 +5,19 @@ background-color: #85D3EF;
     padding-left: 30px;
     padding-bottom: 5px;
     padding-top: 5px;
-    position: relative;
-    left: 55rem;
+    
+    
 display: flex;
-flex-direction: row;
-align-items: center;
+
+
 gap: 60px;
 
 
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -27,4 +27,16 @@ gap: 60px;
         border: none;
         color: white;
     }
+}
+
+
+
+.formulario {
+
+background-color: #D84A32FF;
+padding: 20px;
+text-align: center;
+margin: 100px;
+border-radius: 20px;
+
 }
